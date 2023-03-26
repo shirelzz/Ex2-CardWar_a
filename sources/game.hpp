@@ -1,5 +1,7 @@
-#include "player.hpp"
+#ifndef GAME_HPP
+#define GAME_HPP
 
+#include "player.hpp"
 using namespace std;
 #include<iostream>
 
@@ -11,6 +13,8 @@ class Game{
 
     public:
         Game(Player p1, Player p2 ) : player1(p1), player2(p2){}
+
+        ~Game(){}
 
         void printWiner(); 
 
@@ -25,3 +29,4 @@ class Game{
         void playAll();
 
 };
+#endif

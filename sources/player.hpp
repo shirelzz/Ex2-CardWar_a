@@ -1,3 +1,6 @@
+#ifndef PLAYER_HPP
+#define PLAYER_HPP
+
 using namespace std;
 #include <vector>
 #include "card.hpp"
@@ -25,6 +28,5 @@ class Player{
         int cardesTaken();
 
 
-
-
 };
+#endif
