@@ -1,4 +1,5 @@
 namespace ariel{}
+#include <iostream>
 
 class Card{
 
