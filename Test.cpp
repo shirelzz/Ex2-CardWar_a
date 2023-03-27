@@ -43,8 +43,10 @@ TEST_CASE("number of cards at the end of the game"){
     Game game(player1, player2);
     game.playAll();
 
-    CHECK(player1.stacksize() <= 52 && player1.stacksize() >= 0);
-    CHECK(player2.stacksize() <= 52 && player2.stacksize() >= 0);
+    CHECK(player1.stacksize() <= 52);
+    CHECK(player1.stacksize() >= 0);
+    CHECK(player2.stacksize() <= 52);
+    CHECK(player2.stacksize() >= 0);
     CHECK(player1.cardesTaken() + player2.cardesTaken() == 26);
 
 }
@@ -72,13 +74,7 @@ TEST_CASE("number of cards in each turn"){
     
     for(int i = 0; i<25; i++){
         game.playTurn();
-        CHECK(
-            (player1.cardesTaken() == p1_cards && player2.cardesTaken() == p2_cards+1) ||     
-            (player1.cardesTaken() == p1_cards && player2.cardesTaken() == p2_cards+3) || 
-            (player1.cardesTaken() == p1_cards+1 && player2.cardesTaken() == p2_cards) || 
-            (player1.cardesTaken() == p1_cards+3 && player2.cardesTaken() == p2_cards)
-        );
-
+        
         if(player1.cardesTaken() == p1_cards && player2.cardesTaken() == p2_cards+1){
             p2_cards++;
         }
@@ -91,6 +87,9 @@ TEST_CASE("number of cards in each turn"){
         else if(player1.cardesTaken() == p1_cards+3 && player2.cardesTaken() == p2_cards){
             p1_cards = p1_cards + 3;
         }
+
+        CHECK_EQ(player1.cardesTaken(), p1_cards);
+        CHECK_EQ(player2.cardesTaken(), p2_cards);
 
     }
     
