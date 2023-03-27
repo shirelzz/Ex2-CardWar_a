@@ -1,15 +1,20 @@
 #include "game.hpp"
 #include "card.hpp"
 #include "player.hpp"
+namespace ariel{}
 
-void printWiner(){}
+Game::Game(Player p1, Player p2 ): player1(p1), player2(p2){}
 
-void printLog(){}
+Game::~Game(){}
 
-void printStats(){}
+void Game::printWiner(){}
 
-void playTurn(){}
+void Game::printLog(){}
 
-void printLastTurn(){}
+void Game::printStats(){}
 
-void playAll(){}
+void Game::playTurn(){}
+
+void Game::printLastTurn(){}
+
+void Game::playAll(){}

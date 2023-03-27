@@ -1,9 +1,15 @@
 #include "player.hpp"
+#include "game.hpp"
+#include "card.hpp"
+namespace ariel{}
 
-void changeMode(){} //change isPlaying field
+Player::Player(std::string name): name(name) {}
+Player::~Player(){}
 
-bool getMode(){}
+void Player::changeMode(){} //change isPlaying field
 
-int stacksize(){}
+bool Player::getMode(){return false;}
 
-int cardesTaken(){}
+int Player::stacksize(){return 0;}
+
+int Player::cardesTaken(){return 0;}
