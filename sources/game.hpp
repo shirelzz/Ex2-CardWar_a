@@ -13,9 +13,9 @@ class Game{
         Player player2;
 
     public:
-        Game(Player p1, Player p2 );
+        Game(Player pla1, Player pla2 );
 
-        ~Game();
+        // ~Game();
 
         void printWiner(); 
 

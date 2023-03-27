@@ -4,7 +4,9 @@
 namespace ariel{}
 
 Player::Player(std::string name): name(name) {}
-Player::~Player(){}
+// Player::Player(const Player& other) {}
+
+// Player::~Player(){}
 
 void Player::changeMode(){} //change isPlaying field
 

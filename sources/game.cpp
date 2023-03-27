@@ -3,9 +3,9 @@
 #include "player.hpp"
 namespace ariel{}
 
-Game::Game(Player p1, Player p2 ): player1(p1), player2(p2){}
+Game::Game(Player pla1, Player pla2 ): player1(pla1), player2(pla2){}
 
-Game::~Game(){}
+// Game::~Game(){}
 
 void Game::printWiner(){}
 

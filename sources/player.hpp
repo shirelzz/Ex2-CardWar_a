@@ -19,7 +19,9 @@ class Player{
     public:
         Player(std::string name);
 
-        ~Player();
+        // Player(const Player& other);
+
+        // ~Player();
 
         void changeMode(); //change isPlaying field
 

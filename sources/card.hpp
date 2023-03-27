@@ -17,7 +17,7 @@ class Card{
 
     Card();
 
-    ~Card();
+    // ~Card();
 
 
 
