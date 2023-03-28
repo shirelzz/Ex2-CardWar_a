@@ -17,11 +17,28 @@ class Player{
 
 
     public:
+
+        // Non-default constructor
         Player(std::string name);
 
-        // Player(const Player& other);
+        // // Default constructor
+        // Player() = default;
 
+        // // Copy constructor
+        // Player(const Player& other) = default;
+
+        // // Copy assignment operator
+        // Player& operator=(const Player& other) = default;
+
+        // // Move constructor
+        // Player(Player&& other) noexcept = default;
+
+        // // Move assignment operator
+        // Player& operator=(Player&& other) noexcept = default;
+
+        // // Destructor.Caused problems with tidy. will fix later
         // ~Player();
+
 
         void changeMode(); //change isPlaying field
 

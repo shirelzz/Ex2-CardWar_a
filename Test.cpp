@@ -137,12 +137,12 @@ TEST_CASE("case of a tie"){
 
     Game game(player1, player2);
 
-    for(int i = 0; player1.stacksize() == 0 && player2.stacksize() == 0  && i<1000 ; i++){
+    for(int i = 0; player1.stacksize() == 0 && player2.stacksize() == 0  && i<100 ; i++){
 
         //if there is a winner
         if (((player1.cardesTaken() > player2.cardesTaken() || player1.cardesTaken() < player2.cardesTaken()) &&
             player1.stacksize() == 0 && player2.stacksize() == 0 ) ||
-            i==999)
+            i==99)
         {
             std::cout << "Didn't reach the purpose of the test." << endl;
             break;

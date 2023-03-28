@@ -15,11 +15,26 @@ class Card{
 
     public:
 
-    Card();
+        // Non-default Constructor
+        Card(int number, std::string shp);
 
-    // ~Card();
+        // Default constructor
+        // Card() = default;
 
+        // // Copy constructor
+        // Card(const Card& other) = default;
 
+        // // Copy assignment operator
+        // Card& operator=(const Card& other) = default;
+
+        // // Move constructor
+        // Card(Card&& other) noexcept = default;
+
+        // // Move assignment operator
+        // Card& operator=(Card&& other) noexcept = default;
+
+        // Destructor. caused problems with tidy. will fix later
+        // ~Card();
 
 
 

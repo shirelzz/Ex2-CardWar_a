@@ -13,8 +13,27 @@ class Game{
         Player player2;
 
     public:
+
+        // Non-default constructor
         Game(Player pla1, Player pla2 );
 
+        // Default constructor
+        // Game() = default;
+
+        // Copy constructor
+        // Game(const Game& other) = default;
+
+        // Copy assignment operator
+        // Game& operator=(const Game& other) = default;
+
+        // Move constructor
+        // Game(Game&& other) noexcept = default;
+
+        // Move assignment operator
+        // Game& operator=(Game&& other) noexcept = default;
+
+        // Destructor
+        //caused problems with tidy. will fix later
         // ~Game();
 
         void printWiner(); 

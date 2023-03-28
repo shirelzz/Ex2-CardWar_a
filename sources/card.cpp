@@ -4,6 +4,8 @@
 namespace ariel{}
 
 
-    Card::Card(){}
+    Card::Card(int number, std::string shp) : num(number), shape(shp){}
+
+    // Card::Card(){}
 
     // Card::~Card(){}
