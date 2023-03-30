@@ -1,7 +1,10 @@
 #ifndef GAME_HPP
 #define GAME_HPP
 
+#include <vector>
+#include "card.hpp"
 #include "player.hpp"
+
 namespace ariel{}
 using namespace std;
 #include<iostream>
@@ -9,10 +12,19 @@ using namespace std;
 class Game{
 
     private:
+
         Player player1;
         Player player2;
 
+        void shuffleDeck();
+
+        void dealCards(std::vector<Card> deck_of_cards);
+
+
     public:
+
+        std::vector<Card> deck;
+
 
         // Non-default constructor
         Game(Player pla1, Player pla2 );

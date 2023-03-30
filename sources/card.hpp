@@ -12,11 +12,13 @@ class Card{
     int num;
     std::string shape;
 
+    // Non-default Constructor
+    Card(int number, std::string shp);
+
 
     public:
 
-        // Non-default Constructor
-        Card(int number, std::string shp);
+        void createCard(int number, std::string shp);
 
         // Default constructor
         // Card() = default;
